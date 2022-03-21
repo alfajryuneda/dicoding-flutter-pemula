@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'modules/02-container.dart';
 import 'modules/03-padding.dart';
 import 'modules/04-row.dart';
+import 'modules/05-column.dart';
 
 void main() => runApp(MyApp());
 
@@ -44,7 +45,9 @@ class FirstScreen extends StatelessWidget {
           )
         ],
       ),
-      body: MyRow(),
+      body: Center(
+        child: MyColumn(),
+      ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.book),
         onPressed: () {},
