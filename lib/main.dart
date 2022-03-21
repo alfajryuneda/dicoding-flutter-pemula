@@ -17,27 +17,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// class FirstScreen extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('First Screen'),
-//         actions: <Widget>[
-//           IconButton(
-//               onPressed: () {}, icon: Icon(Icons.search, color: Colors.white))
-//         ],
-//       ),
-//       body: Center(
-//         child: Text('Hello World'),
-//       ),
-//       floatingActionButton: FloatingActionButton(
-//         child: Icon(Icons.add),
-//       ),
-//     );
-//   }
-// }
-
 class FirstScreen extends StatelessWidget {
   const FirstScreen({Key? key}) : super(key: key);
   @override
@@ -64,7 +43,21 @@ class FirstScreen extends StatelessWidget {
       ),
       body: Container(
         child: Text('Hi', style: TextStyle(fontSize: 40)),
-        color: Colors.blueGrey,
+        decoration: BoxDecoration(
+            color: Colors.lime,
+            shape: BoxShape.circle,
+            border: Border.all(
+              color: Colors.green,
+              width: 3,
+            ),
+            // borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.red,
+                offset: Offset(2, 8),
+                blurRadius: 10,
+              )
+            ]),
         // width: 200,
         // height: 100,
         padding: EdgeInsets.all(10),
