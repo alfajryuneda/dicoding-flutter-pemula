@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'Oswald',
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
@@ -37,7 +38,10 @@ class FirstScreen extends StatelessWidget {
           ),
           onPressed: () {},
         ),
-        title: const Text('First Screen'),
+        title: const Text(
+          'First Screen Oswald',
+          // style: TextStyle(fontFamily: 'Oswald'),
+        ),
         actions: <Widget>[
           IconButton(
             icon: const Icon(
