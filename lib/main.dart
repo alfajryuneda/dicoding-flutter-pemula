@@ -5,6 +5,7 @@ import 'modules/04-row.dart';
 import 'modules/05-column.dart';
 import 'modules/06-button.dart';
 import 'modules/07-text-field.dart';
+import 'modules/08-image.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: MyInputWidget(), // Panggil FirstScreen di sini
+      home: FirstScreen(), // Panggil FirstScreen di sini
     );
   }
 }
@@ -48,7 +49,7 @@ class FirstScreen extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: MyIconButton(),
+        child: MyImageAsset(),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.book),
