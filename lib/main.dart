@@ -6,6 +6,7 @@ import 'modules/05-column.dart';
 import 'modules/06-button.dart';
 import 'modules/07-text-field.dart';
 import 'modules/08-image.dart';
+import 'modules/09-listview.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: FirstScreen(), // Panggil FirstScreen di sini
+      home: const FirstScreen(), // Panggil FirstScreen di sini
     );
   }
 }
@@ -53,7 +54,7 @@ class FirstScreen extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: MyImageAsset(),
+        child: MyListViewSeparator(),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.book),
