@@ -8,6 +8,8 @@ import 'modules/07-text-field.dart';
 import 'modules/08-image.dart';
 import 'modules/09-listview.dart';
 import 'package:second_app/modules/10-expanded-flexible.dart';
+import 'modules/11-page-one.dart';
+import 'modules/12-page-two.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: MyFlexible(), // Panggil FirstScreen di sini
+      home: MyPageOne(), // Panggil FirstScreen di sini
     );
   }
 }
