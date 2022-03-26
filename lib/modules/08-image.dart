@@ -17,7 +17,7 @@ class MyImageAsset extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      '../images/cool-baby.jpg',
+      'images/cool-baby.jpg',
       width: 200,
       height: 200,
     );

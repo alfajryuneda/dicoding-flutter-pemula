@@ -6,6 +6,12 @@ import 'modules/05-column.dart';
 import 'modules/06-button.dart';
 import 'modules/07-text-field.dart';
 import 'modules/08-image.dart';
+import 'modules/09-listview.dart';
+import 'package:second_app/modules/10-expanded-flexible.dart';
+import 'modules/11-page-one.dart';
+import 'modules/12-page-two.dart';
+import 'modules/13-mediaQuery.dart';
+import 'modules/14-layout-builder.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +26,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: FirstScreen(), // Panggil FirstScreen di sini
+      home: MyResponsivePage(), // Panggil FirstScreen di sini
     );
   }
 }
@@ -53,7 +59,7 @@ class FirstScreen extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: MyImageAsset(),
+        child: MyExpanded(),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.book),
